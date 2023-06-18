@@ -14,7 +14,10 @@ def hello_world2():
 def test2():
     data = request.args.get('x')
     return 'this is the data u input in the url{}'.format(data)
-
+@app.route("/test3")
+def test3():
+    return 'this is nitish here'
+    
 if __name__ == "__main__":
     app.run(host = "0.0.0.0")
 
